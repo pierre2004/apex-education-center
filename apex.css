@@ -1,0 +1,281 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #001F3F, #003366);
+    color: white;
+    text-align: center;
+}
+
+/* Navigation Bar */
+.navbar {
+    width: 100%;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 0;
+}
+
+/* Logo and Title */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.logo-text {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+    color: #FFD700;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background: url('https://source.unsplash.com/1600x900/?education,science') no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-content {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(8px);
+}
+
+/* Button Styling */
+.hero-btn {
+    background: linear-gradient(to right, #FFD700, #FFC300);
+    color: #001F3F;
+    padding: 12px 25px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.hero-btn:hover {
+    transform: scale(1.1);
+    background-color: #FF4500;
+    color: white;
+}
+
+/* About Section */
+.about {
+    padding: 60px;
+    background: linear-gradient(45deg, #002855, #004488);
+    color: white;
+    text-align: left !important; /* Ensures left alignment */
+    border-radius: 0; /* Full rectangle */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.about-content p {
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Study Plans Section */
+.study-plans {
+    width: 100%;
+    background: white; /* Clean, modern look */
+    border-radius: 0 !important; /* Forces full rectangle */
+    padding: 50px;
+    text-align: left;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Study Plans Title */
+.study-plans h2 {
+    color: #002855; /* Dark blue for strong contrast */
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Course Items */
+.course-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive layout */
+    gap: 20px;
+    padding: 40px;
+}
+
+/* Individual Course Item */
+.course-item {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.2));
+    padding: 30px;
+    border-radius: 12px;
+    color: white;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Hover Effect for Interaction */
+.course-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Title Styling */
+.course-item h3 {
+    font-family: 'Montserrat', sans-serif; /* Modern, bold font */
+    font-size: 24px; /* Enlarged for better readability */
+    font-weight: 800; /* Makes it bold */
+    color: #00FFFF !important; /* Cyan glow for a futuristic look */
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+
+/* Description Text */
+.course-item p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #f1f1f1;
+}
+
+/* Unique Background Colors for Each Plan */
+.course-item:nth-child(1) { background: linear-gradient(135deg, #D62828, #A4161A); } /* Deep red energy */
+.course-item:nth-child(2) { background: linear-gradient(135deg, #F4A261, #E76F51); } /* Warm orange sunset */
+.course-item:nth-child(3) { background: linear-gradient(135deg, #2A9D8F, #007F5F); } /* Vibrant green freshness */
+.course-item:nth-child(4) { background: linear-gradient(135deg, #264653, #1B3A4B); } /* Sleek deep teal */
+
+
+
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    padding: 50px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 0 !important; /* Full rectangle */
+}
+
+.contact h2 {
+    font-size: 28px;
+    color: #FFD700; /* Consistent styling */
+    font-weight: bold;
+}
+
+.contact-info a {
+    color: #FFD700; /* Gold link */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.whatsapp-btn {
+    display: inline-block;
+    background: #25D366;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.whatsapp-btn:hover {
+    background: #128C7E;
+    transform: scale(1.05);
+}
+
+
+/* Smooth Scroll Effect */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 0 !important; /* Full rectangle */
+}
+
+/* Animations */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.6s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Social Media Links */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: white;
+    font-size: 32px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-links a:hover {
+    transform: scale(1.2);
+    color: #FFD700;
+}
+
+/* If using images */
+.social-links img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-links img:hover {
+    transform: scale(1.2);
+}
