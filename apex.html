@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apex Education Center</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .hero {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background-image: url('home.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .hero-content {
+            color: white;
+            font-size: 48px;
+            font-weight: bold;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+        }
+        .courses {
+            padding: 40px;
+            text-align: center;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .course-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .course-item {
+            background: linear-gradient(45deg, #ff7eb3, #ff758c);
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            color: white;
+            transition: transform 0.3s ease-in-out;
+        }
+        .course-item:hover {
+            transform: scale(1.05);
+        }
+        .contact {
+            text-align: center;
+            padding: 40px;
+            background-color: #333;
+            color: white;
+        }
+        .whatsapp-btn {
+            display: inline-block;
+            background-color: #25D366;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: background 0.3s ease-in-out;
+        }
+        .whatsapp-btn:hover {
+            background-color: #1ebe57;
+        }
+        footer {
+            padding: 20px;
+            text-align: center;
+            background-color: #222;
+            color: white;
+        }
+        .social-links a {
+            color: white;
+            margin: 0 10px;
+            font-size: 24px;
+            transition: color 0.3s ease-in-out;
+        }
+        .social-links a:hover {
+            color: #ff7eb3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+<header>
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="logo.png" alt="Apex Logo" class="logo">
+            <span class="logo-text">Apex Education Center</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#study-plans">Study Plans</a></li> <!-- Updated Name & Link -->
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Apex</h1>
+            <p>Better Education for a Better World</p>
+        </div>
+    </section>
+<!-- About Section -->
+<section class="about" id="about">
+    <h2>Why Apex Education Center is Different</h2>
+    <div class="about-content">
+        <p>
+            🚀 <strong>Education Reimagined!</strong> At <strong>Apex Education Center</strong>, we don’t just teach—we <strong>ignite curiosity!</strong>  
+            Our students don’t just <strong>read theories</strong>, they <strong>bring them to life</strong> through <strong>cutting-edge experiments</strong> in <strong>physics and chemistry</strong>.  
+        </p>
+
+        <p>
+            🧪 <strong>Experience Science Hands-On!</strong> Whether it’s exploring <strong>electromagnetism, chemical reactions</strong>, or <strong>gravity-defying concepts</strong>,  
+            Apex allows students to <strong>test, experiment, and discover the world in action</strong>!
+        </p>
+
+        <p>
+            ⚡ <strong>A Twist on Traditional Learning!</strong> Forget boring lectures—our approach <strong>blends interactive demonstrations, creative problem-solving, and hands-on challenges</strong>  
+            to <strong>make learning exciting, real, and unforgettable</strong>.
+        </p>
+
+        <p>
+            🌟 <strong>Join the Future of Education!</strong> Apex is where <strong>science meets creativity, students become inventors, and learning becomes an adventure</strong>.  
+            Get ready to <strong>think beyond the book</strong> and <strong>unlock the power of discovery</strong>!
+        </p>
+    </div>
+</section>
+
+
+
+
+<!-- Study Plans Section -->
+<section class="study-plans" id="study-plans">
+    <h2>📚 Study Plans & Learning Options</h2>
+    <div class="course-list">
+        <div class="course-item">
+            <h3><span class="highlight">🔵 One-on-One Sessions</span></h3>
+            <p>Individualized learning tailored to the student's needs.</p>
+        </div>
+        <div class="course-item">
+            <h3><span class="highlight">🟢 Scientific Subjects Plan</span></h3>
+            <p>Classes on Monday, Wednesday, and Friday, focusing on sciences.</p>
+        </div>
+        <div class="course-item">
+            <h3><span class="highlight">🟠 Literary Subjects Plan</span></h3>
+            <p>Only literature subjects on Tuesday and Thursday.</p>
+        </div>
+        <div class="course-item">
+            <h3><span class="highlight">🔴 Full Week Plan</span></h3>
+            <p>All subjects, all week long.</p>
+        </div>
+    </div>
+</section>
+
+
+
+
+<!-- Contact Section -->
+<section class="contact" id="contact">
+    <h2>📞 Get in Touch with Apex!</h2>
+    <p>Have questions? Ready to start your learning journey? Contact us today!</p>
+
+    <div class="contact-info">
+        <p>Email: <a href="mailto:apex2025.edu@gmail.com">apex2025.edu@gmail.com</a></p>
+        <p>WhatsApp: <a href="https://wa.me/96178984905?text=Hello%20Apex%20Education%20Center,%20I'm%20interested%20in%20your%20courses!" target="_blank">Chat with Us on WhatsApp</a></p>
+    </div>
+
+    <a href="https://wa.me/96178984905?text=Hello%20Apex%20Education%20Center,%20I'm%20interested%20in%20your%20courses!" target="_blank" class="whatsapp-btn">
+        🚀 Start Your Journey with Apex!
+    </a>
+</section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="social-links">
+            <a href="https://www.facebook.com/share/1BXt6aCux2/" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/apex_education_center?igsh=eTJpNXlvYnBnM3Ni" target="_blank"><i class="fa fa-instagram"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>
